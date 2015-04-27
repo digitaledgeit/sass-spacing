@@ -40,31 +40,31 @@ $spacing_sizes: (
 }
 
 @mixin p($size : 1) {
-  margin: map-get($spacing_sizes, $size);
+  padding: map-get($spacing_sizes, $size);
 }
 
 @mixin px($size : 1) {
-  margin-left: map-get($spacing_sizes, $size);
-  margin-right: map-get($spacing_sizes, $size);
+  padding-left: map-get($spacing_sizes, $size);
+  padding-right: map-get($spacing_sizes, $size);
 }
 
 @mixin py($size : 1) {
-  margin-top: map-get($spacing_sizes, $size);
-  margin-bottom: map-get($spacing_sizes, $size);
+  padding-top: map-get($spacing_sizes, $size);
+  padding-bottom: map-get($spacing_sizes, $size);
 }
 
 @mixin pl($size : 1) {
-  margin-left: map-get($spacing_sizes, $size);
+  padding-left: map-get($spacing_sizes, $size);
 }
 
 @mixin pt($size : 1) {
-  margin-top: map-get($spacing_sizes, $size);
+  padding-top: map-get($spacing_sizes, $size);
 }
 
 @mixin pr($size : 1) {
-  margin-right: map-get($spacing_sizes, $size);
+  padding-right: map-get($spacing_sizes, $size);
 }
 
 @mixin pb($size : 1) {
-  margin-bottom: map-get($spacing_sizes, $size);
+  padding-bottom: map-get($spacing_sizes, $size);
 }
