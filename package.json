@@ -1,0 +1,13 @@
+{
+  "name": "sass-spacing",
+  "version": "0.1.0",
+  "main.scss": "mixins.scss",
+  "devDependencies": {
+    "digitaledgeit-breakpoints": "^0.1.0",
+    "node-sass": "^2.1.1",
+    "sass-composer": "^0.1.0"
+  },
+  "scripts": {
+    "build": "sass-composer compiled.scss -o dist/compiled.css"
+  }
+}
