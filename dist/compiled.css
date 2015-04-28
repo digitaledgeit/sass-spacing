@@ -1,4 +1,3 @@
-/* targeting devices from 0px */
 @media (min-width: 0em) {
   [g-xs~=m0] {
     margin: 0rem; }
@@ -225,7 +224,6 @@
   [g-xs~=pb6] {
     padding-bottom: 6rem; } }
 
-/* targeting devices from 569px */
 @media (min-width: 35.5625em) {
   [g-sm~=m0] {
     margin: 0rem; }
@@ -452,7 +450,6 @@
   [g-sm~=pb6] {
     padding-bottom: 6rem; } }
 
-/* targeting devices from 768px */
 @media (min-width: 48em) {
   [g-md~=m0] {
     margin: 0rem; }
@@ -679,7 +676,6 @@
   [g-md~=pb6] {
     padding-bottom: 6rem; } }
 
-/* targeting devices from 1004px */
 @media (min-width: 62.75em) {
   [g-lg~=m0] {
     margin: 0rem; }
