@@ -1,6 +1,8 @@
 # sass-spacing
 
-SASS mixins for margins and paddings. Plus a compiled set of responsive margin and padding classes.
+SASS mixins for margins and paddings. 
+
+With a bonus set of compiled responsive margin and padding classes.
 
 ## Installation
 
@@ -23,8 +25,10 @@ Using mixins:
     
 Using the pre-compiled stylesheet:
 
-    <div class="tile" g-xs="m2 p1">
-      <h1 class="tile__title" g-xs="my1">Tile Title</h1>
+    <link href="sass-spacing/dist/compiled.css" rel="stylesheet"/>
+
+    <div class="tile" g-xs="m2 p1" g-md="m4 p2">
+      <h1 class="tile__title" g-xs="my1" g-md="my3">Tile Title</h1>
     </div>
     
 ## License

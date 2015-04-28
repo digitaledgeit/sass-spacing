@@ -1,6 +1,9 @@
 {
   "name": "sass-spacing",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "author": "James Newell <james@digitaledgeit.com.au>",
+  "keywords": ["margin", "padding", "spacing", "sass", "libsass", "scss", "style", "npm", "import", "browserify"],
+  "description": "SASS mixins for margins and paddings.",
   "main.scss": "mixins.scss",
   "devDependencies": {
     "digitaledgeit-breakpoints": "^0.1.0",
@@ -9,5 +12,10 @@
   },
   "scripts": {
     "build": "sass-composer compiled.scss -o dist/compiled.css"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitaledgeit/sass-spacing"
+  },
+  "license": "MIT"
 }
