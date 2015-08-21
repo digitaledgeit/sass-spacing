@@ -1,10 +1,10 @@
-@import "sass-named-breakpoints";
+@import "sass-breakpoints";
 @import "./mixins";
 
 $responsive-utility-prefix: 'g-';
 
-@each $breakpoint, $units in $named_breakpoints {
-  @include named_breakpoint($breakpoint) {
+@each $breakpoint, $units in $breakpoints {
+  @include breakpoint($breakpoint) {
     @each $size, $units in $spacing_sizes {
 
       // === Margin ===

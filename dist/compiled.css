@@ -224,7 +224,7 @@
   [g-xs~=pb6] {
     padding-bottom: 6rem; } }
 
-@media (min-width: 35.5625em) {
+@media (min-width: 35.5em) {
   [g-sm~=m0] {
     margin: 0rem; }
   [g-sm~=mx0] {
