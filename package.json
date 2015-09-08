@@ -14,7 +14,7 @@
     "import",
     "sass-composer"
   ],
-  "description": "SASS mixins for margin and padding.",
+  "description": "SASS mixins for margin and padding. Plus a compiled set of responsive margin and padding classes.",
   "main.scss": "index.scss",
   "dependencies": {
     "sass-breakpoints": "^1.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "sass-spacing",
-  "description": "SASS mixins for margin and padding.",
+  "description": "SASS mixins for margin and padding. Plus a compiled set of responsive margin and padding classes.",
   "tags": [
     "margin",
     "padding",
