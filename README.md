@@ -76,8 +76,7 @@ HTML:
 
 ## Breakpoints
 
-See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints 
-and for instructions on customising the available breakpoints. 
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints. 
 
 ## Customisation
 
@@ -96,6 +95,8 @@ You can customise a number of features by defining the following variables befor
     
     //the prefix for the breakpoint attribute used for the compiled classes
     $spacing-breakpoint-attribute-prefix: 'breakpoint-';
+
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints. 
 
 ## Change log
 
