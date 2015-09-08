@@ -1,6 +1,6 @@
 # sass-spacing
 
-SASS mixins for margin and padding. 
+SASS mixins for margin and padding. Plus a compiled set of responsive margin and padding classes.
 
 ## Installation
 
