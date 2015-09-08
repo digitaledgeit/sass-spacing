@@ -86,7 +86,7 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 
 ## Customisation
 
-You can customise a number of features by defining the following variables before you importing `sass-spacing` in your SASS file.
+You can customise a number of features by defining the following variables before importing `sass-spacing` in your SASS file.
 
     //alternate sizes
     $spacing-sizes: (

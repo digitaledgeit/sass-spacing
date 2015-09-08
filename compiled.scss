@@ -1,7 +1,7 @@
 @import "sass-breakpoints";
 @import "./index";
 
-$spacing-breakpoint-attribute-prefix: 'u-';
+$spacing-breakpoint-attribute-prefix: 'u-' !default;
 
 @each $breakpoint, $units in $breakpoints {
   @include breakpoint($breakpoint) {
