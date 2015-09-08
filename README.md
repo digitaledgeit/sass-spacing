@@ -83,20 +83,18 @@ and for instructions on customising the available breakpoints.
 
 You can customise a number of features by defining the following variables before you importing `sass-spacing` in your SASS file.
 
-    //the sizes
+    //alternate sizes
     $spacing-sizes: (
       'none': 0,
       'xs': 4px,
-      'sm': 8px,
       'md': 16px,
-      'lg': 24px,
       'xl': 28px
     );
 
-    //whether !important is used
+    //whether !important is applied
     $spacing-important: false;
     
-    //the attribute prefix for the compiled classes
+    //the prefix for the breakpoint attribute used for the compiled classes
     $spacing-breakpoint-attribute-prefix: 'breakpoint-';
 
 ## Change log
