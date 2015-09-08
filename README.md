@@ -63,12 +63,12 @@ HTML:
 ## Directions
 
 - none - margin/padding on all sides
+- `x` - margin/padding on the left and right
+- `y` - margin/padding on the top and bottom
 - `l` - margin/padding on the left
 - `r` - margin/padding on the right
 - `t` - margin/padding on the tom
 - `b` - margin/padding on the bottom
-- `x` - margin/padding n the left and right
-- `y` - margin/padding on the top and bottom
 
 ## Sizes
 
@@ -88,7 +88,7 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 
 You can customise a number of features by defining the following variables before importing `sass-spacing` in your SASS file.
 
-    //alternate sizes
+    //specify some alternate sizes
     $spacing-sizes: (
       'none': 0,
       'xs': 4px,
@@ -96,10 +96,10 @@ You can customise a number of features by defining the following variables befor
       'xl': 28px
     );
 
-    //whether !important is applied
+    //specify whether !important is applied
     $spacing-important: false;
     
-    //the prefix for the breakpoint attribute used for the compiled classes
+    //specify the prefix used for the breakpoint attribute used by the compiled classes
     $spacing-breakpoint-attribute-prefix: 'breakpoint-';
 
 See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints. 
