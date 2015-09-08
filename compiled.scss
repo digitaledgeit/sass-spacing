@@ -1,69 +1,69 @@
 @import "sass-breakpoints";
-@import "./mixins";
+@import "index";
 
-$responsive-utility-prefix: 'g-';
+$spacing-breakpoint-attribute-prefix: 'u-';
 
 @each $breakpoint, $units in $breakpoints {
   @include breakpoint($breakpoint) {
-    @each $size, $units in $spacing_sizes {
+    @each $size, $units in $spacing-sizes {
 
       // === Margin ===
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=m#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=m#{$size}] {
         @include m($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=mx#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mx#{$size}] {
         @include mx($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=my#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=my#{$size}] {
         @include my($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=ml#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=ml#{$size}] {
         @include ml($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=mt#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mt#{$size}] {
         @include mt($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=mr#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mr#{$size}] {
         @include mr($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=mb#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mb#{$size}] {
         @include mb($size);
       }
 
       // === Padding ===
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=p#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=p#{$size}] {
         @include p($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=px#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=px#{$size}] {
         @include px($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=py#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=py#{$size}] {
         @include py($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=pl#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pl#{$size}] {
         @include pl($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=pt#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pt#{$size}] {
         @include pt($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=pr#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pr#{$size}] {
         @include pr($size);
       }
 
-      [#{$responsive-utility-prefix}#{$breakpoint}~=pb#{$size}] {
+      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pb#{$size}] {
         @include pb($size);
       }
 

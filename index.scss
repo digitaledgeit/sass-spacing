@@ -1,0 +1,72 @@
+
+$spacing-sizes: (
+  0: 0rem,
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+  5: 5rem,
+  6: 6rem,
+) !default;
+
+$spacing-important: true !default;
+
+@mixin m($size : 1) {
+  margin: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin mx($size : 1) {
+  margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin my($size : 1) {
+  margin-top: map-get($spacing-sizes, $size);
+  margin-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin ml($size : 1) {
+  margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin mt($size : 1) {
+  margin-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin mr($size : 1) {
+  margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin mb($size : 1) {
+  margin-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin p($size : 1) {
+  padding: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin px($size : 1) {
+  padding-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  padding-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin py($size : 1) {
+  padding-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  padding-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pl($size : 1) {
+  padding-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pt($size : 1) {
+  padding-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pr($size : 1) {
+  padding-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pb($size : 1) {
+  padding-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+}

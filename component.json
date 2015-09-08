@@ -1,0 +1,6 @@
+{
+  "name": "sass-spacing",
+  "description": "SASS mixins for margin and padding.",
+  "styles": ["dist/compiled.css"],
+  "license": "MIT"
+}

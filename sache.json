@@ -1,0 +1,14 @@
+{
+  "name": "sass-spacing",
+  "description": "SASS mixins for margin and padding.",
+  "tags": [
+    "margin",
+    "padding",
+    "spacing",
+    "sass",
+    "libsass",
+    "scss",
+    "style",
+    "sass-composer"
+  ]
+}
