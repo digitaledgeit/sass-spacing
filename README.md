@@ -4,7 +4,13 @@ SASS mixins for margin and padding. Plus a compiled set of responsive margin and
 
 ## Installation
 
+NPM:
+
     npm install --save sass-spacing
+    
+Component:
+
+    component install digitaledgeit/sass-spacing
     
 ## Usage
 
@@ -103,9 +109,9 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 ### v1.0.0
 
 - added an option for applying `!important` to margin and padding rules and defaulted the option to true (a breaking change if you're relying on your own classes overriding the spacing mixins/classes)
-- changed the names of some options for consistency and to be specific to this module (a breaking change if you're overriding the default options)
+- changed names of the options for improved consistency and to prevent clashes with other modules (a breaking change if you're overriding the default options)
 - changed the prefix from `g` to `u` - the `g-*` attributes are used for more utilities than just the grid (a breaking change if you're using the compiled classes)
-- added support for component
+- added support for ComponentJS
     
 ## License
     
