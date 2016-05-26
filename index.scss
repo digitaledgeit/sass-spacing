@@ -21,7 +21,7 @@ $spacing-important: true !default;
 }
 
 @mixin my($size : 1) {
-  margin-top: map-get($spacing-sizes, $size);
+  margin-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
   margin-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
 }
 
