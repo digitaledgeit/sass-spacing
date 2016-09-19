@@ -7,11 +7,11 @@ SASS mixins for margin and padding. Plus a compiled set of responsive margin and
 NPM:
 
     npm install --save sass-spacing
-    
+
 Component:
 
     component install digitaledgeit/sass-spacing
-    
+
 ## Usage
 
 ### Using the mixins:
@@ -20,21 +20,21 @@ SCSS:
 
     @import "sass-spacing";
     @import "sass-breakpoint";
-    
+
     .tile {
       @include p(1);
       @include breakpoint('md') {
         @include p(2);
       }
     }
-    
+
     .tile__content {
       @include mt(1);
         @include breakpoint('md') {
           @include mt(2);
         }
     }
-    
+
 HTML:
 
     <div class="tile">
@@ -43,8 +43,8 @@ HTML:
     </div>
 
 - Where `m` or `p` is margin or padding
-- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied 
-- Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the `$size` of the margin or padding applied
+- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
+- Where `0`, `1`, `2`, `3`, `4`, `5`, `6` or `auto` is the `$size` of the margin or padding applied
 
 ### Using the pre-compiled stylesheet
 
@@ -52,11 +52,11 @@ HTML:
 
     <div class="tile" u-xs="p1" u-md="p2">
       <h1 class="tile__title">Tile Title</h1>
-      <h1 class="tile__content" u-xs="mt1" u-md="mt2>Tile content...</h1>
+      <h1 class="tile__content" u-xs="mt1" u-md="mt2">Tile content...</h1>
     </div>
 
 - Where `m` or `p` is margin or padding
-- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied 
+- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
 - Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the size of the margin or padding applied
 - Where `u-*` is the breakpoint from which the margin or padding is applied
 
@@ -79,10 +79,11 @@ HTML:
 - `4` - `4rem` margin/padding
 - `5` - `5rem` margin/padding
 - `6` - `6rem` margin/padding
+- `auto` - `auto` margin/padding
 
 ## Breakpoints
 
-See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints. 
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints.
 
 ## Customisation
 
@@ -98,13 +99,17 @@ You can customise a number of features by defining the following variables befor
 
     //specify whether !important is applied
     $spacing-important: false;
-    
+
     //specify the prefix used for the breakpoint attribute used by the compiled classes
     $spacing-breakpoint-attribute-prefix: 'breakpoint-';
 
-See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints. 
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
 
 ## Change log
+
+### v1.1.0
+
+- added `auto` size
 
 ### v1.0.0
 
@@ -112,9 +117,9 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 - changed names of the options for improved consistency and to prevent clashes with other modules (a breaking change if you're overriding the default options)
 - changed the prefix from `g` to `u` - the `g-*` attributes are used for more utilities than just the grid (a breaking change if you're using the compiled classes)
 - added support for ComponentJS
-    
+
 ## License
-    
+
 The MIT License (MIT)
 
 Copyright (c) 2015 James Newell
