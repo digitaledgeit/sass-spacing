@@ -1,6 +1,5 @@
 
 $spacing-sizes: (
-  auto: auto,
   0: 0rem,
   1: 1rem,
   2: 2rem,
@@ -13,12 +12,21 @@ $spacing-sizes: (
 $spacing-important: true !default;
 
 @mixin m($size : 1) {
-  margin: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  @if ($size == 'auto') {
+    margin: auto #{if($spacing-important, '!important', '')};
+  } @else {
+    margin: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  }
 }
 
 @mixin mx($size : 1) {
-  margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
-  margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  @if ($size == 'auto') {
+    margin-left: auto #{if($spacing-important, '!important', '')};
+    margin-right: auto #{if($spacing-important, '!important', '')};
+  } @else {
+    margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+    margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  }
 }
 
 @mixin my($size : 1) {
@@ -27,7 +35,11 @@ $spacing-important: true !default;
 }
 
 @mixin ml($size : 1) {
-  margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  @if ($size == 'auto') {
+    margin-left: auto #{if($spacing-important, '!important', '')};
+  } @else {
+    margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  }
 }
 
 @mixin mt($size : 1) {
@@ -35,7 +47,11 @@ $spacing-important: true !default;
 }
 
 @mixin mr($size : 1) {
-  margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  @if ($size == 'auto') {
+    margin-right: auto #{if($spacing-important, '!important', '')};
+  } @else {
+    margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+  }
 }
 
 @mixin mb($size : 1) {

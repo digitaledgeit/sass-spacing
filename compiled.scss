@@ -5,6 +5,25 @@ $spacing-breakpoint-attribute-prefix: 'u-' !default;
 
 @each $breakpoint, $units in $breakpoints {
   @include breakpoint($breakpoint) {
+
+    $size: 'auto';
+
+    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=m#{$size}] {
+      @include m($size);
+    }
+
+    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mx#{$size}] {
+      @include mx($size);
+    }
+
+    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=ml#{$size}] {
+      @include ml($size);
+    }
+
+    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mr#{$size}] {
+      @include mr($size);
+    }
+
     @each $size, $units in $spacing-sizes {
 
       // === Margin ===

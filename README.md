@@ -79,7 +79,7 @@ HTML:
 - `4` - `4rem` margin/padding
 - `5` - `5rem` margin/padding
 - `6` - `6rem` margin/padding
-- `auto` - `auto` margin/padding
+- `auto` - `auto` margin
 
 ## Breakpoints
 
