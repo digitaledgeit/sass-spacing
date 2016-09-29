@@ -18,42 +18,88 @@ Component:
 
 SCSS:
 
-    @import "sass-spacing";
-    @import "sass-breakpoint";
+```scss
+@import "sass-spacing";
+@import "sass-breakpoint";
 
-    .tile {
-      @include p(1);
-      @include breakpoint('md') {
-        @include p(2);
-      }
-    }
+.tile {
+  @include p(1);
+  @include breakpoint('md') {
+    @include p(2);
+  }
+}
 
-    .tile__content {
-      @include mt(1);
-        @include breakpoint('md') {
-          @include mt(2);
-        }
+.tile__content {
+  @include mt(1);
+    @include breakpoint('md') {
+      @include mt(2);
     }
+}
+```
 
 HTML:
 
-    <div class="tile">
-      <h1 class="tile__title">Tile Title</h1>
-      <h1 class="tile__content">Tile content...</h1>
-    </div>
+```html
+  <div class="tile">
+    <h1 class="tile__title">Tile Title</h1>
+    <h1 class="tile__content">Tile content...</h1>
+  </div>
+```
 
-- Where `m` or `p` is margin or padding
-- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
-- Where `0`, `1`, `2`, `3`, `4`, `5`, `6` or `auto` is the `$size` of the margin or padding applied
+###### Margin
+
+- `m($size)`
+- `m($y, $x)`
+- `m($t, $r, $b, $l)`
+
+
+- `mx($size)`
+- `mx($r, $l)`
+- `my($size)`
+- `my($t, $b)`
+
+
+- `mt($size)`
+- `mr($size)`
+- `mb($size)`
+- `ml($size)`
+
+Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin is applied.
+
+Where `0`, `1`, `2`, `3`, `4`, `5`, `6` or `auto` is the `$size` of the margin applied.
+
+###### Padding
+
+- `p($size)`
+- `p($y, $x)`
+- `p($t, $r, $b, $l)`
+
+
+- `px($size)`
+- `px($r, $l)`
+- `py($size)`
+- `py($t, $b)`
+
+
+- `pt($size)`
+- `pr($size)`
+- `pb($size)`
+- `pl($size)`
+
+Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the padding is applied.
+
+Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the `$size` of the padding applied.
 
 ### Using the pre-compiled stylesheet
 
 HTML:
 
-    <div class="tile" u-xs="p1" u-md="p2">
-      <h1 class="tile__title">Tile Title</h1>
-      <h1 class="tile__content" u-xs="mt1" u-md="mt2">Tile content...</h1>
-    </div>
+```html
+<div class="tile" u-xs="p1" u-md="p2">
+  <h1 class="tile__title">Tile Title</h1>
+  <h1 class="tile__content" u-xs="mt1" u-md="mt2">Tile content...</h1>
+</div>
+```
 
 - Where `m` or `p` is margin or padding
 - Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
@@ -79,7 +125,7 @@ HTML:
 - `4` - `4rem` margin/padding
 - `5` - `5rem` margin/padding
 - `6` - `6rem` margin/padding
-- `auto` - `auto` margin
+- `auto` - `auto` margin only
 
 ## Breakpoints
 
@@ -89,19 +135,21 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 
 You can customise a number of features by defining the following variables before importing `sass-spacing` in your SASS file.
 
-    //specify some alternate sizes
-    $spacing-sizes: (
-      'none': 0,
-      'xs': 4px,
-      'md': 16px,
-      'xl': 28px
-    );
+```scss
+//specify some alternate sizes
+$spacing-sizes: (
+  'none': 0,
+  'xs': 4px,
+  'md': 16px,
+  'xl': 28px
+);
 
-    //specify whether !important is applied
-    $spacing-important: false;
+//specify whether !important is applied
+$spacing-important: false;
 
-    //specify the prefix used for the breakpoint attribute used by the compiled classes
-    $spacing-breakpoint-attribute-prefix: 'breakpoint-';
+//specify the prefix used for the breakpoint attribute used by the compiled classes
+$spacing-breakpoint-attribute-prefix: 'breakpoint-';
+```
 
 See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
 

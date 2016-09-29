@@ -7,11 +7,7 @@ $spacing-breakpoint-attribute-prefix: 'u-' !default;
   @include breakpoint($breakpoint) {
 
     $size: 'auto';
-
-    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=m#{$size}] {
-      @include m($size);
-    }
-
+    
     [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mx#{$size}] {
       @include mx($size);
     }

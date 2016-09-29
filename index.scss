@@ -11,27 +11,56 @@ $spacing-sizes: (
 
 $spacing-important: true !default;
 
-@mixin m($size : 1) {
-  @if ($size == 'auto') {
-    margin: auto #{if($spacing-important, '!important', '')};
+@mixin m($t : 1, $r: null, $b: null, $l: null) {
+  @if ($t and $r and $b and $l) {
+
+    @include mt($t);
+    @include mr($r);
+    @include mb($b);
+    @include ml($l);
+
+  } @else if ($t and $r and not $b and not $l) {
+
+    @include my($t);
+    @include mx($r);
+
+  } @else if ($t and not $r and not $b and not $l) {
+
+    @if ($t == 'auto') {
+      @include my(0);
+      @include mx(auto);
+    } @else {
+      @include my($t);
+      @include mx($t);
+    }
+
   } @else {
-    margin: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+    @error "m(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects m($size), m($y, $x) or m($t, $r, $b, $l)"
   }
 }
 
-@mixin mx($size : 1) {
-  @if ($size == 'auto') {
-    margin-left: auto #{if($spacing-important, '!important', '')};
-    margin-right: auto #{if($spacing-important, '!important', '')};
+@mixin mx($r : 1, $l : null) {
+  @if ($r and $l) {
+    @include mr($r);
+    @include ml($l);
+  } @else if ($r and not $l) {
+    @include mr($r);
+    @include ml($r);
   } @else {
-    margin-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
-    margin-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+    @error "mx(#{$r}, #{$l}): Invalid parameters. Expects mx($size) or mx($r, $l)"
   }
 }
 
-@mixin my($size : 1) {
-  margin-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
-  margin-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+@mixin my($t : 1, $b : null) {
+  @if ($t and $b) {
+    @include mt($t);
+    @include mb($b);
+  } @else if ($t and not $b) {
+    @include mt($t);
+    @include mb($t);
+  } @else {
+    @error "my(#{$t}, #{$b}): Invalid parameters. Expects my($size) or my($t, $b)"
+  }
 }
 
 @mixin ml($size : 1) {
@@ -58,18 +87,51 @@ $spacing-important: true !default;
   margin-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin p($size : 1) {
-  padding: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+@mixin p($t : 1, $r: null, $b: null, $l: null) {
+  @if ($t and $r and $b and $l) {
+
+    @include pt($t);
+    @include pr($r);
+    @include pb($b);
+    @include pl($l);
+
+  } @else if ($t and $r and not $b and not $l) {
+
+    @include py($t);
+    @include px($r);
+
+  } @else if ($t and not $r and not $b and not $l) {
+
+    @include py($t);
+    @include px($t);
+
+  } @else {
+    @error "p(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects p($size), p($y, $x) or p($t, $r, $b, $l)"
+  }
 }
 
-@mixin px($size : 1) {
-  padding-left: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
-  padding-right: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+@mixin px($r : 1, $l : null) {
+  @if ($r and $l) {
+    @include pr($r);
+    @include pl($l);
+  } @else if ($r and not $l) {
+    @include pr($r);
+    @include pl($r);
+  } @else {
+    @error "px(#{$r}, #{$l}): Invalid parameters. Expects px($size) or px($r, $l)"
+  }
 }
 
-@mixin py($size : 1) {
-  padding-top: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
-  padding-bottom: map-get($spacing-sizes, $size) #{if($spacing-important, '!important', '')};
+@mixin py($t : 1, $b : null) {
+  @if ($t and $b) {
+    @include pt($t);
+    @include pb($b);
+  } @else if ($t and not $b) {
+    @include pt($t);
+    @include pb($t);
+  } @else {
+    @error "py(#{$t}, #{$b}): Invalid parameters. Expects py($size) or py($t, $b)"
+  }
 }
 
 @mixin pl($size : 1) {
