@@ -6,11 +6,9 @@ SASS mixins for margin and padding. Plus a compiled set of responsive margin and
 
 NPM:
 
-    npm install --save sass-spacing
-
-Component:
-
-    component install digitaledgeit/sass-spacing
+```bash
+npm install --save sass-spacing
+```
 
 ## Usage
 
@@ -121,12 +119,12 @@ HTML:
 ## Sizes
 
 - `0` - `0rem` margin/padding
-- `1` - `1rem` margin/padding
-- `2` - `2rem` margin/padding
-- `3` - `3rem` margin/padding
-- `4` - `4rem` margin/padding
-- `5` - `5rem` margin/padding
-- `6` - `6rem` margin/padding
+- `1` - `.25rem` margin/padding
+- `2` - `.5rem` margin/padding
+- `3` - `1rem` margin/padding
+- `4` - `2rem` margin/padding
+- `5` - `4rem` margin/padding
+- `6` - `8rem` margin/padding
 - `auto` - `auto` margin only
 
 ## Breakpoints
@@ -156,6 +154,11 @@ $spacing-breakpoint-attribute-prefix: 'breakpoint-';
 See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
 
 ## Change log
+
+### v2.0.0
+
+- changed the default sizes
+- removed support for ComponentJS
 
 ### v1.1.1
 
