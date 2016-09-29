@@ -50,6 +50,7 @@ HTML:
 
 - `m($size)`
 - `m($y, $x)`
+- `m($t, $x, $b)`
 - `m($t, $r, $b, $l)`
 
 
@@ -72,6 +73,7 @@ Where `0`, `1`, `2`, `3`, `4`, `5`, `6` or `auto` is the `$size` of the margin a
 
 - `p($size)`
 - `p($y, $x)`
+- `p($t, $x, $b)`
 - `p($t, $r, $b, $l)`
 
 
@@ -155,9 +157,14 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 
 ## Change log
 
+### v1.1.1
+
+- added missing `m($t, $x, $b)` and `p($t, $x, $b)` overrides
+
 ### v1.1.0
 
-- added `auto` size
+- added `auto` size to margin
+- added overrides for `m()` and `p()` to set multiple properties at once
 
 ### v1.0.0
 
