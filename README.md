@@ -104,7 +104,7 @@ HTML:
 - Where `m` or `p` is margin or padding
 - Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
 - Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the size of the margin or padding applied
-- Where `u-*` is the breakpoint from which the margin or padding is applied
+- Where `@*` is the breakpoint from which the margin or padding is applied
 
 ## Directions
 
