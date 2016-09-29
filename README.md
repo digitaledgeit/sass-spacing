@@ -147,8 +147,6 @@ $spacing-sizes: (
 //specify whether !important is applied
 $spacing-important: false;
 
-//specify the prefix used for the breakpoint attribute used by the compiled classes
-$spacing-breakpoint-attribute-prefix: 'breakpoint-';
 ```
 
 See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
@@ -159,6 +157,7 @@ See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) packa
 
 - changed the default sizes
 - removed support for ComponentJS
+- switched from attributes to classnames
 
 ### v1.1.1
 

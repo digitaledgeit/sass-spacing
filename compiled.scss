@@ -1,22 +1,20 @@
 @import "sass-breakpoints";
 @import "./index";
 
-$spacing-breakpoint-attribute-prefix: 'u-' !default;
-
 @each $breakpoint, $units in $breakpoints {
   @include breakpoint($breakpoint) {
 
     $size: 'auto';
-    
-    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mx#{$size}] {
+
+    .mx-#{$size}\@#{$breakpoint} {
       @include mx($size);
     }
 
-    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=ml#{$size}] {
+    .ml-#{$size}\@#{$breakpoint} {
       @include ml($size);
     }
 
-    [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mr#{$size}] {
+    .mr-#{$size}\@#{$breakpoint} {
       @include mr($size);
     }
 
@@ -24,61 +22,61 @@ $spacing-breakpoint-attribute-prefix: 'u-' !default;
 
       // === Margin ===
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=m#{$size}] {
+      .m-#{$size}\@#{$breakpoint} {
         @include m($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mx#{$size}] {
+      .mx-#{$size}\@#{$breakpoint} {
         @include mx($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=my#{$size}] {
+      .my-#{$size}\@#{$breakpoint} {
         @include my($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=ml#{$size}] {
+      .ml-#{$size}\@#{$breakpoint} {
         @include ml($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mt#{$size}] {
+      .mt-#{$size}\@#{$breakpoint} {
         @include mt($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mr#{$size}] {
+      .mr-#{$size}\@#{$breakpoint} {
         @include mr($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=mb#{$size}] {
+      .mb-#{$size}\@#{$breakpoint} {
         @include mb($size);
       }
 
       // === Padding ===
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=p#{$size}] {
+      .p-#{$size}\@#{$breakpoint} {
         @include p($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=px#{$size}] {
+      .px-#{$size}\@#{$breakpoint} {
         @include px($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=py#{$size}] {
+      .py-#{$size}\@#{$breakpoint} {
         @include py($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pl#{$size}] {
+      .pl-#{$size}\@#{$breakpoint} {
         @include pl($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pt#{$size}] {
+      .pt-#{$size}\@#{$breakpoint} {
         @include pt($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pr#{$size}] {
+      .pr-#{$size}\@#{$breakpoint} {
         @include pr($size);
       }
 
-      [#{$spacing-breakpoint-attribute-prefix}#{$breakpoint}~=pb#{$size}] {
+      .pb-#{$size}\@#{$breakpoint} {
         @include pb($size);
       }
 
