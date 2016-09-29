@@ -95,9 +95,9 @@ Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the `$size` of the padding applied.
 HTML:
 
 ```html
-<div class="tile" u-xs="p1" u-md="p2">
+<div class="tile p-1@xs p-2@md">
   <h1 class="tile__title">Tile Title</h1>
-  <h1 class="tile__content" u-xs="mt1" u-md="mt2">Tile content...</h1>
+  <h1 class="tile__content mt-1@xs mt-2@md">Tile content...</h1>
 </div>
 ```
 
