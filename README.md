@@ -1,24 +1,40 @@
-# sass-spacing
+# @jameslnewell/spacing
 
-SASS mixins for margin and padding. Plus a compiled set of responsive margin and padding classes.
+CSS classes for responsive margins and padding.
 
 ## Installation
 
-NPM:
-
 ```bash
-npm install --save sass-spacing
+npm install --save @jameslnewell/spacing
 ```
 
 ## Usage
+
+### Using the classes:
+
+HTML:
+
+```html
+<link rel="stylesheet" href="./node_modules/@jameslnewell/spacing/dist/index.css"/>
+
+<div class="tile p:1@xs p:2@md">
+  <h1 class="tile__title">My Title</h1>
+  <p class="tile__content mt:1@xs mt:2@md">My content...</p>
+</div>
+```
+
+- Where `m` or `p` is margin or padding
+- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
+- Where `0`, `1`, `2`, `3`, `4`, `5`, `6` or `auto` is the size of the margin or padding applied
+- Where `@*` is the breakpoint from which the margin or padding is applied
 
 ### Using the mixins:
 
 SCSS:
 
 ```scss
-@import "sass-spacing";
-@import "sass-breakpoint";
+@import "./node_modules/@jameslnewell/spacing/mixins.scss";
+@import "./node_modules/@jameslnewell/breakpoints/mixins.scss";
 
 .tile {
   @include p(1);
@@ -90,22 +106,6 @@ Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the padding is ap
 
 Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the `$size` of the padding applied.
 
-### Using the pre-compiled stylesheet
-
-HTML:
-
-```html
-<div class="tile p-1@xs p-2@md">
-  <h1 class="tile__title">Tile Title</h1>
-  <h1 class="tile__content mt-1@xs mt-2@md">Tile content...</h1>
-</div>
-```
-
-- Where `m` or `p` is margin or padding
-- Where `x`, `y`, `l`, `r`, `t` or `b` is the direction in which the margin or padding is applied
-- Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the size of the margin or padding applied
-- Where `@*` is the breakpoint from which the margin or padding is applied
-
 ## Directions
 
 - none - margin/padding on all sides
@@ -129,11 +129,11 @@ HTML:
 
 ## Breakpoints
 
-See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints.
+See the [@jameslnewell/breakpoints](https://www.npmjs.com/package/@jameslnewell/breakpoints) package for a list of available breakpoints.
 
 ## Customisation
 
-You can customise a number of features by defining the following variables before importing `sass-spacing` in your SASS file.
+You can customise a number of features by defining the following variables before importing `@jameslnewell/spacing` in your SASS file.
 
 ```scss
 //specify some alternate sizes
@@ -149,7 +149,7 @@ $spacing-important: false;
 
 ```
 
-See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
+See the [@jameslnewell/breakpoints](https://www.npmjs.com/package/@jameslnewell/breakpoints) package for instructions on customising the available breakpoints.
 
 ## Change log
 

@@ -1,20 +1,20 @@
-@import "sass-breakpoints";
-@import "./index";
+@import "@jameslnewell/breakpoints/mixins";
+@import "./mixins.scss";
 
 @each $breakpoint, $units in $breakpoints {
   @include breakpoint($breakpoint) {
 
     $size: 'auto';
 
-    .mx-#{$size}\@#{$breakpoint} {
+    .mx\:#{$size}\@#{$breakpoint} {
       @include mx($size);
     }
 
-    .ml-#{$size}\@#{$breakpoint} {
+    .ml\:#{$size}\@#{$breakpoint} {
       @include ml($size);
     }
 
-    .mr-#{$size}\@#{$breakpoint} {
+    .mr\:#{$size}\@#{$breakpoint} {
       @include mr($size);
     }
 
@@ -22,61 +22,61 @@
 
       // === Margin ===
 
-      .m-#{$size}\@#{$breakpoint} {
+      .m\:#{$size}\@#{$breakpoint} {
         @include m($size);
       }
 
-      .mx-#{$size}\@#{$breakpoint} {
+      .mx\:#{$size}\@#{$breakpoint} {
         @include mx($size);
       }
 
-      .my-#{$size}\@#{$breakpoint} {
+      .my\:#{$size}\@#{$breakpoint} {
         @include my($size);
       }
 
-      .ml-#{$size}\@#{$breakpoint} {
+      .ml\:#{$size}\@#{$breakpoint} {
         @include ml($size);
       }
 
-      .mt-#{$size}\@#{$breakpoint} {
+      .mt\:#{$size}\@#{$breakpoint} {
         @include mt($size);
       }
 
-      .mr-#{$size}\@#{$breakpoint} {
+      .mr\:#{$size}\@#{$breakpoint} {
         @include mr($size);
       }
 
-      .mb-#{$size}\@#{$breakpoint} {
+      .mb\:#{$size}\@#{$breakpoint} {
         @include mb($size);
       }
 
       // === Padding ===
 
-      .p-#{$size}\@#{$breakpoint} {
+      .p\:#{$size}\@#{$breakpoint} {
         @include p($size);
       }
 
-      .px-#{$size}\@#{$breakpoint} {
+      .px\:#{$size}\@#{$breakpoint} {
         @include px($size);
       }
 
-      .py-#{$size}\@#{$breakpoint} {
+      .py\:#{$size}\@#{$breakpoint} {
         @include py($size);
       }
 
-      .pl-#{$size}\@#{$breakpoint} {
+      .pl\:#{$size}\@#{$breakpoint} {
         @include pl($size);
       }
 
-      .pt-#{$size}\@#{$breakpoint} {
+      .pt\:#{$size}\@#{$breakpoint} {
         @include pt($size);
       }
 
-      .pr-#{$size}\@#{$breakpoint} {
+      .pr\:#{$size}\@#{$breakpoint} {
         @include pr($size);
       }
 
-      .pb-#{$size}\@#{$breakpoint} {
+      .pb\:#{$size}\@#{$breakpoint} {
         @include pb($size);
       }
 
