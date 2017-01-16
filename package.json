@@ -1,6 +1,6 @@
 {
   "name": "sass-spacing",
-  "version": "2.0.0-preview.1",
+  "version": "2.0.0-preview",
   "author": "James Newell <james@digitaledgeit.com.au>",
   "description": "CSS classes for margin and padding.",
   "keywords": [
