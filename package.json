@@ -1,6 +1,6 @@
 {
   "name": "sass-spacing",
-  "version": "2.0.0-preview",
+  "version": "2.0.0",
   "author": "James Newell <james@digitaledgeit.com.au>",
   "description": "CSS classes for margin and padding.",
   "keywords": [
@@ -27,7 +27,9 @@
   },
   "main.scss": "mixins.scss",
   "files": [
-    "index.css"
+    "index.css",
+    "mixins.scss",
+    "classes.scss"
   ],
   "scripts": {
     "build": "node-sass --include-path node_modules ./classes.scss > ./index.css",
