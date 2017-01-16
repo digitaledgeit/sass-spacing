@@ -15,7 +15,7 @@ npm install --save sass-spacing
 HTML:
 
 ```html
-<link rel="stylesheet" href="sass-spacing/index.css"/>
+<link rel="stylesheet" href="node_modules/sass-spacing/index.css"/>
 
 <div class="tile p:1@xs p:2@md">
   <h1 class="tile__title">My Title</h1>
