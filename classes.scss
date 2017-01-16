@@ -1,4 +1,4 @@
-@import "@jameslnewell/breakpoints/mixins";
+@import "sass-breakpoints/index";
 @import "./mixins.scss";
 
 @each $breakpoint, $units in $breakpoints {

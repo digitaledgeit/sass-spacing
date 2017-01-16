@@ -1,7 +1,8 @@
 {
-  "name": "@jameslnewell/spacing",
+  "name": "sass-spacing",
   "version": "2.0.0-preview.1",
   "author": "James Newell <james@digitaledgeit.com.au>",
+  "description": "CSS classes for margin and padding.",
   "keywords": [
     "margin",
     "padding",
@@ -14,22 +15,22 @@
     "import",
     "sass-composer"
   ],
-  "description": "CSS classes for margin and padding.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jameslnewell/spacing"
+    "url": "https://github.com/digitaledgeit/sass-spacing"
   },
   "dependencies": {
-    "@jameslnewell/breakpoints": "^2.0.0-preview.1"
+    "sass-breakpoints": "^2.1.0"
   },
   "devDependencies": {
     "node-sass": "^3.10.0"
   },
+  "main.scss": "./mixins.scss",
   "files": [
-    "dist"
+    "index.css"
   ],
   "scripts": {
-    "build": "mkdir -p ./dist/ | node-sass --include-path node_modules ./classes.scss > ./dist/index.css",
+    "build": "node-sass --include-path node_modules ./classes.scss > ./index.css",
     "prepublish": "npm run build"
   },
   "license": "MIT"

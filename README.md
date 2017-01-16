@@ -1,11 +1,11 @@
-# @jameslnewell/spacing
+# sass-spacing
 
-CSS classes for responsive margins and padding.
+CSS classes/mixins for responsive margins and padding.
 
 ## Installation
 
 ```bash
-npm install --save @jameslnewell/spacing
+npm install --save sass-spacing
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save @jameslnewell/spacing
 HTML:
 
 ```html
-<link rel="stylesheet" href="./node_modules/@jameslnewell/spacing/dist/index.css"/>
+<link rel="stylesheet" href="sass-spacing/index.css"/>
 
 <div class="tile p:1@xs p:2@md">
   <h1 class="tile__title">My Title</h1>
@@ -33,8 +33,8 @@ HTML:
 SCSS:
 
 ```scss
-@import "./node_modules/@jameslnewell/spacing/mixins.scss";
-@import "./node_modules/@jameslnewell/breakpoints/mixins.scss";
+@import "sass-spacing/mixins.scss";
+@import "sass-breakpoints/mixins.scss";
 
 .tile {
   @include p(1);
@@ -129,14 +129,14 @@ Where `0`, `1`, `2`, `3`, `4`, `5` or `6` is the `$size` of the padding applied.
 
 ## Breakpoints
 
-See the [@jameslnewell/breakpoints](https://www.npmjs.com/package/@jameslnewell/breakpoints) package for a list of available breakpoints.
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for a list of available breakpoints.
 
 ## Customisation
 
-You can customise a number of features by defining the following variables before importing `@jameslnewell/spacing` in your SASS file.
+You can customise a number of features by defining the following variables before importing `sass-spacing` in your SASS file.
 
 ```scss
-//specify some alternate sizes
+//specify some alternate sizing scheme
 $spacing-sizes: (
   'none': 0,
   'xs': 4px,
@@ -149,15 +149,15 @@ $spacing-important: false;
 
 ```
 
-See the [@jameslnewell/breakpoints](https://www.npmjs.com/package/@jameslnewell/breakpoints) package for instructions on customising the available breakpoints.
+See the [sass-breakpoints](https://www.npmjs.com/package/sass-breakpoints) package for instructions on customising the available breakpoints.
 
 ## Change log
 
 ### v2.0.0
 
-- changed the default sizes
+- changed the default margin-padding sizes
+- switched from attributes to class names
 - removed support for ComponentJS
-- switched from attributes to classnames
 
 ### v1.1.1
 
