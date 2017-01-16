@@ -25,7 +25,7 @@
   "devDependencies": {
     "node-sass": "^3.10.0"
   },
-  "main.scss": "./mixins.scss",
+  "main.scss": "mixins.scss",
   "files": [
     "index.css"
   ],
